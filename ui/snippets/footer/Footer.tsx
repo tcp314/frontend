@@ -32,46 +32,16 @@ const Footer = () => {
   const issueUrl = useIssueUrl(backendVersionData?.backend_version);
   const BLOCKSCOUT_LINKS = [
     {
-      icon: 'edit' as const,
-      iconSize: '16px',
-      text: 'Submit an issue',
-      url: issueUrl,
-    },
-    {
-      icon: 'social/canny' as const,
-      iconSize: '20px',
-      text: 'Feature request',
-      url: 'https://blockscout.canny.io/feature-requests',
-    },
-    {
-      icon: 'social/git' as const,
-      iconSize: '18px',
-      text: 'Contribute',
-      url: 'https://github.com/blockscout/blockscout',
-    },
-    {
       icon: 'social/twitter' as const,
       iconSize: '18px',
       text: 'X (ex-Twitter)',
-      url: 'https://www.twitter.com/blockscoutcom',
+      url: 'https://x.com/RevaLinkNetwork',
     },
     {
-      icon: 'social/discord' as const,
+      icon: 'social/telega' as const,
       iconSize: '24px',
       text: 'Discord',
-      url: 'https://discord.gg/blockscout',
-    },
-    {
-      icon: 'discussions' as const,
-      iconSize: '20px',
-      text: 'Discussions',
-      url: 'https://github.com/orgs/blockscout/discussions',
-    },
-    {
-      icon: 'donate' as const,
-      iconSize: '20px',
-      text: 'Donate',
-      url: 'https://github.com/sponsors/blockscout',
+      url: 'https://t.me/RevaLinkNetwork',
     },
   ];
 
@@ -118,22 +88,10 @@ const Footer = () => {
   const renderProjectInfo = React.useCallback((gridArea?: GridProps['gridArea']) => {
     return (
       <Box gridArea={ gridArea }>
-        <Link fontSize="xs" href="https://www.blockscout.com">blockscout.com</Link>
+        <Link fontSize="xs" href="https://tcpofficial.com">tcpofficial.com</Link>
         <Text mt={ 3 } fontSize="xs">
-          Blockscout is a tool for inspecting and analyzing EVM based blockchains. Blockchain explorer for Ethereum Networks.
+          Tixon Cash is a complete public chain and an ecological value community developed based on consumption and payment applications.
         </Text>
-        <VStack spacing={ 1 } mt={ 6 } alignItems="start">
-          { apiVersionUrl && (
-            <Text fontSize="xs">
-              Backend: <Link href={ apiVersionUrl } target="_blank">{ backendVersionData?.backend_version }</Link>
-            </Text>
-          ) }
-          { frontendLink && (
-            <Text fontSize="xs">
-              Frontend: { frontendLink }
-            </Text>
-          ) }
-        </VStack>
       </Box>
     );
   }, [ apiVersionUrl, backendVersionData?.backend_version, frontendLink ]);
@@ -141,14 +99,14 @@ const Footer = () => {
   const containerProps: GridProps = {
     as: 'footer',
     px: { base: 4, lg: 12 },
-    py: { base: 4, lg: 8 },
+    py: { base: 4, lg: 9 },
     borderTop: '1px solid',
     borderColor: 'divider',
     gridTemplateColumns: { base: '1fr', lg: 'minmax(auto, 470px) 1fr' },
     columnGap: { lg: '32px', xl: '100px' },
   };
-
-  if (config.UI.footer.links) {
+  if (false) {
+  //if (config.UI.footer.links) {
     return (
       <Grid { ...containerProps }>
         <div>
