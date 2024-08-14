@@ -32,7 +32,7 @@ const TEMPLATE_MAP: Record<Route['pathname'], string> = {
   '/account/custom-abi': DEFAULT_TEMPLATE,
   '/account/tag-address': DEFAULT_TEMPLATE,
   '/account/verified-addresses': DEFAULT_TEMPLATE,
-  '/public-tags/submit': 'Propose a new public tag for your address, contract or set of contracts for your dApp. Our team will review and approve your submission. Public tags are incredible tool which helps users identify contracts and addresses.',
+  '/public-tags/submit': 'Propose a new public tag for your address',
   '/withdrawals': DEFAULT_TEMPLATE,
   '/visualize/sol2uml': DEFAULT_TEMPLATE,
   '/csv-export': DEFAULT_TEMPLATE,
