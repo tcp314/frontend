@@ -2,7 +2,7 @@ import type { Route } from 'nextjs-routes';
 
 // equal og:description
 // eslint-disable-next-line max-len
-const DEFAULT_TEMPLATE = 'REVALINK public chain provides strong liquidity support for global cryptocurrencies';
+const DEFAULT_TEMPLATE = 'REVALINK public chain';
 
 // FIXME all page descriptions will be updated later
 const TEMPLATE_MAP: Record<Route['pathname'], string> = {
